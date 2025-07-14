@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="th">
 <head>
 <meta charset="UTF-8" />
@@ -52,15 +52,10 @@
   </div>
 </div>
 
-<div class="search-section">
-  <form action="search.html" method="get">
-    <input type="text" name="q" placeholder="ค้นหาเมนูอาหาร..." required>
-    <button type="submit">🔍 ค้นหา</button>
-  </form>
-</div>
-
-
 <h1>รายการอาหารภาคกลาง</h1>
+
+  <h2>ค้นหารายการอาหาร</h2>
+  <input type="text" id="searchInput" onkeyup="searchList()" placeholder="พิมพ์ชื่ออาหาร...">
 
 <div class="food-list">
   <div class="food-item">
@@ -230,7 +225,19 @@
         <img src="ChatGPT Image Jun 18, 2025, 10_16_12 AM.png" alt="App Gallery" style="width: 60px;">
       </div>
     </div>
+<script>
+  function searchList() {
+    const input = document.getElementById('searchInput');
+    const filter = input.value.toLowerCase();
+    const foodItems = document.getElementsByClassName('food-item');
 
+    for (let i = 0; i < foodItems.length; i++) {
+      const item = foodItems[i];
+      const text = item.textContent || item.innerText;
+      item.style.display = text.toLowerCase().includes(filter) ? "" : "none";
+    }
+  }
+</script>
 
   </div>
 </footer>
