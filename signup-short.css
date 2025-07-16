@@ -1,0 +1,28 @@
+/* signup-short.css */
+.signup-short {
+  background-color: #fff0f0;
+  text-align: center;
+  padding: 20px;
+  font-family: 'Kanit', sans-serif;
+  border-bottom: 1px solid #ddd;
+}
+
+.signup-short p {
+  font-size: 18px;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.signup-short .signup-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #d90429;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.signup-short .signup-btn:hover {
+  background-color: #a30320;
+}

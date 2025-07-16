@@ -1,0 +1,57 @@
+/* signup-full.css */
+body {
+  font-family: 'Kanit', sans-serif;
+  background-color: #fff8f0;
+  margin: 0;
+  padding: 0;
+}
+
+.signup-form {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+.signup-form h2 {
+  text-align: center;
+  color: #d90429;
+}
+
+.signup-form label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.signup-form input[type="email"],
+.signup-form input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.signup-form button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #d90429;
+  color: white;
+  cursor: pointer;
+}
+
+.signup-form button.cancel {
+  background-color: #999;
+  margin-top: 10px;
+}
+
+.signup-form button:hover {
+  opacity: 0.9;
+}
